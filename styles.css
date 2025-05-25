@@ -195,7 +195,7 @@ body {
 
 /* **** End cards **** */
 
-/* **** Menu **** */
+/* **** Desktop Menu **** */
 .desktop-menu {
   width: 100px;
   height: auto;
@@ -230,7 +230,46 @@ body {
   margin-bottom: 20px;
 }
 
-/* **** End menu **** */
+/* **** End desktop menu **** */
+
+/* **** Mobile menu **** */
+.mobile-menu {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.mobile-menu ul {
+  margin: 24px 0 24px 0; 
+  padding: 0;
+  list-style: none;
+}
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+.mobile-menu li {
+  text-decoration: none;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+}
+.mobile-menu .email {
+  font-size: var(--sm);
+  font-weight: 400;
+}
+.mobile-menu .singup {
+  font-size: var(--sm);
+  font-weight: 400;
+  color: var(--hospital-green);
+}
+
+/* **** End Mobile menu **** */
 
 @media (max-width: 640px) {
   .logo {
